@@ -63,6 +63,10 @@
     font-size 26px
     line-height: 34px
 
+.section__title--padding
+  +respond-between($xsmall, $small)
+    padding: 0 135px
+
 .section--methodology
   border-radius: 0 0 5px 5px
 
@@ -92,6 +96,10 @@
 
 .section__title--close
   margin-bottom: 12px
+
+  +respond-to($xsmall)
+    max-width: 500px
+    margin: 0 auto
 
 .section__under-title--white
   color: #ffffff

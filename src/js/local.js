@@ -83,19 +83,16 @@ $(document).ready(function () {
         event.preventDefault();
         if ($(this).siblings('.map__btn-container').hasClass('visible')) {
             $(this).siblings('.map__btn-container').removeClass('visible');
-            $(this).removeClass('map__btn--active');
         }
         else {
             $('.map__btn-container').removeClass('visible');
             $(this).siblings('.map__btn-container').addClass('visible');
-            $(this).addClass('map__btn--active');
         }
     });
 
     body.mouseup(function(event) {
         if ($('.map__btn-wrapper').has(event.target).length === 0) {
             $('.map__btn-container').removeClass('visible');
-            $('.map__btn').removeClass('map__btn--active');
         }
     });
 

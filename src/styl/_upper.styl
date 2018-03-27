@@ -9,6 +9,9 @@
   right: 0
   top: 0
 
+  +respond-between($xsmall, $small)
+    top: 59px
+
   +respond-to($xsmall)
     position: static
     display: flex
@@ -51,7 +54,7 @@
   +respond-to($medium)
     margin-top: 41px
 
-  +respond-to($medium)
+  +respond-to($small)
     margin-top: 0
 
 .upper-info__list

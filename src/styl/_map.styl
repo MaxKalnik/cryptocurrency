@@ -69,7 +69,6 @@
   &:active
     background: #5656ce
     border: 1px solid #5656ce
-    transform: scale(1.05)
 
     .map__btn-text
       color: $color-white
@@ -78,26 +77,10 @@
     .map__btn-icon
       fill: $color-white
 
-  +respond-from($xsmall)
-    &:hover
-      transform: scale(1.05)
-
   +respond-to($xsmall)
     width: 122px
     height: 48px
     padding: 11px
-
-.map__btn--active
-  background: #5656ce
-  border: 1px solid #5656ce
-  transform: scale(1.05)
-
-  .map__btn-text
-    color: $color-white
-    border-bottom: 1px solid transparent
-
-  .map__btn-icon
-    fill: $color-white
 
 .map__btn-container--share
   position: absolute
