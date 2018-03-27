@@ -1,0 +1,77 @@
+.upper__content
+  position: relative
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.upper__pic
+  position: absolute
+  right: 0
+  top: 0
+
+  +respond-to($xsmall)
+    position: static
+    display: flex
+    justify-content: center
+    margin: 0 auto 30px auto
+
+.upper__text
+  margin-right: 570px
+  +respond-to($medium)
+    margin-right: 0
+
+.upper__pic-img
+  +respond-to($medium)
+    width: 435px
+
+  +respond-to($small)
+    width: 340px
+
+  +respond-to($xsmall)
+    width: 276px
+    height: 265px
+
+.upper__text-under-title
+  @extend .under-title
+
+  +respond-to($medium)
+    margin-right: 490px
+
+  +respond-to($small)
+    margin-right: 360px
+
+  +respond-to($xsmall)
+    font-size: 16px
+    margin-right: 0
+
+.upper__text-main
+  @extend .main-text
+  margin-bottom: 24px
+
+  +respond-to($medium)
+    margin-top: 41px
+
+  +respond-to($medium)
+    margin-top: 0
+
+.upper-info__list
+  margin: 16px 0
+  margin-left: 29px
+  +respond-to($xsmall)
+    margin-left: 0
+
+.upper-info__item-text
+  @extend .main-text
+
+.upper-info__item
+  position: relative
+  padding-left: 18px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 10px
+    width: 6px
+    height: 6px
+    background: url('images/svg/list-bullet.svg') center no-repeat
+    background-size: cover

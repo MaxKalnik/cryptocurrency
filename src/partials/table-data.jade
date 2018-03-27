@@ -1,0 +1,462 @@
+-
+  var values = [
+    {
+      state: "California",
+      infrastructureRank: 12,
+      cryptocurrency: 87,
+      cryptocurrencies: 93,
+      atms: 9,
+      establishments: 535,
+      averageInterest: 6.5
+    },
+    {
+      state: "New York",
+      infrastructureRank: 7,
+      cryptocurrency: 81,
+      cryptocurrencies: 96.25,
+      atms: 23,
+      establishments: 179,
+      averageInterest: 4.5
+    },
+    {
+      state: "New Jersey",
+      infrastructureRank: 34,
+      cryptocurrency: 83,
+      cryptocurrencies: 94,
+      atms: 1,
+      establishments: 59,
+      averageInterest: 18.5
+    },
+    {
+      state: "Washington",
+      infrastructureRank: 22,
+      cryptocurrency: 82,
+      cryptocurrencies: 89.25,
+      atms: 1,
+      establishments: 68,
+      averageInterest: 13
+    },
+    {
+      state: "Alaska",
+      infrastructureRank: 24,
+      cryptocurrency: 100,
+      cryptocurrencies: 70.25,
+      atms: 0,
+      establishments: 8,
+      averageInterest: 14.5
+    },
+    {
+      state: "Nevada",
+      infrastructureRank: 4,
+      cryptocurrency: 84,
+      cryptocurrencies: 79.25,
+      atms: 4,
+      establishments: 78,
+      averageInterest: 5
+    },
+    {
+      state: "Florida",
+      infrastructureRank: 11,
+      cryptocurrency: 77,
+      cryptocurrencies: 74.75,
+      atms: 13,
+      establishments: 266,
+      averageInterest: 9
+    },
+    {
+      state: "Utah",
+      infrastructureRank: 16,
+      cryptocurrency: 73,
+      cryptocurrencies: 75,
+      atms: 1,
+      establishments: 37,
+      averageInterest: 12
+    },
+    {
+      state: "Connecticut",
+      infrastructureRank: 48,
+      cryptocurrency: 68,
+      cryptocurrencies: 78.75,
+      atms: 0,
+      establishments: 13,
+      averageInterest: 28.5
+    },
+    {
+      state: "Colorado",
+      infrastructureRank: 5,
+      cryptocurrency: 69,
+      cryptocurrencies: 76,
+      atms: 7,
+      establishments: 90,
+      averageInterest: 7.5
+    },
+    {
+      state: "District of Columbia",
+      infrastructureRank: 1,
+      cryptocurrency: 73,
+      cryptocurrencies: 70.5,
+      atms: 3,
+      establishments: 16,
+      averageInterest: 6
+    },
+    {
+      state: "Massachusetts",
+      infrastructureRank: 21,
+      cryptocurrency: 65,
+      cryptocurrencies: 77.5,
+      atms: 4,
+      establishments: 39,
+      averageInterest: 16.5
+    },
+    {
+      state: "Illinois",
+      infrastructureRank: 28,
+      cryptocurrency: 67,
+      cryptocurrencies: 75,
+      atms: 7,
+      establishments: 56,
+      averageInterest: 20.5
+    },
+    {
+      state: "Arizona",
+      infrastructureRank: 19,
+      cryptocurrency: 69,
+      cryptocurrencies: 67,
+      atms: 4,
+      establishments: 54,
+      averageInterest: 16.5
+    },
+    {
+      state: "Hawaii",
+      infrastructureRank: 30,
+      cryptocurrency: 69,
+      cryptocurrencies: 67,
+      atms: 0,
+      establishments: 13,
+      averageInterest: 22
+    },
+    {
+      state: "Maryland",
+      infrastructureRank: 13,
+      cryptocurrency: 68,
+      cryptocurrencies: 67,
+      atms: 7,
+      establishments: 25,
+      averageInterest: 14.5
+    },
+    {
+      state: "Virginia",
+      infrastructureRank: 15,
+      cryptocurrency: 63,
+      cryptocurrencies: 65.75,
+      atms: 9,
+      establishments: 42,
+      averageInterest: 16
+    },
+    {
+      state: "Rhode Island",
+      infrastructureRank: 43,
+      cryptocurrency: 60,
+      cryptocurrencies: 65.25,
+      atms: 0,
+      establishments: 5,
+      averageInterest: 30.5
+    },
+    {
+      state: "Michigan",
+      infrastructureRank: 8,
+      cryptocurrency: 61,
+      cryptocurrencies: 62.5,
+      atms: 12,
+      establishments: 63,
+      averageInterest: 13.5
+    },
+    {
+      state: "Idaho",
+      infrastructureRank: 23,
+      cryptocurrency: 63,
+      cryptocurrencies: 58.25,
+      atms: 0,
+      establishments: 18,
+      averageInterest: 21.5
+    },
+    {
+      state: "Oregon",
+      infrastructureRank: 10,
+      cryptocurrency: 59,
+      cryptocurrencies: 61.75,
+      atms: 1,
+      establishments: 56,
+      averageInterest: 15.5
+    },
+    {
+      state: "Texas",
+      infrastructureRank: 20,
+      cryptocurrency: 59,
+      cryptocurrencies: 58,
+      atms: 14,
+      establishments: 202,
+      averageInterest: 21
+    },
+    {
+      state: "Pennsylvania",
+      infrastructureRank: 25,
+      cryptocurrency: 55,
+      cryptocurrencies: 61.75,
+      atms: 7,
+      establishments: 67,
+      averageInterest: 24
+    },
+    {
+      state: "New Hampshire",
+      infrastructureRank: 2,
+      cryptocurrency: 53,
+      cryptocurrencies: 59,
+      atms: 4,
+      establishments: 62,
+      averageInterest: 13
+    },
+    {
+      state: "North Dakota",
+      infrastructureRank: 26,
+      cryptocurrency: 59,
+      cryptocurrencies: 52.5,
+      atms: 0,
+      establishments: 8,
+      averageInterest: 25.5
+    },
+    {
+      state: "Minnesota",
+      infrastructureRank: 33,
+      cryptocurrency: 53,
+      cryptocurrencies: 56,
+      atms: 0,
+      establishments: 43,
+      averageInterest: 29.5
+    },
+    {
+      state: "Delaware",
+      infrastructureRank: 36,
+      cryptocurrency: 50,
+      cryptocurrencies: 59,
+      atms: 0,
+      establishments: 6,
+      averageInterest: 31
+    },
+    {
+      state: "Georgia",
+      infrastructureRank: 3,
+      cryptocurrency: 55,
+      cryptocurrencies: 51.5,
+      atms: 24,
+      establishments: 45,
+      averageInterest: 15.5
+    },
+    {
+      state: "North Carolina",
+      infrastructureRank: 38,
+      cryptocurrency: 53,
+      cryptocurrencies: 52.5,
+      atms: 0,
+      establishments: 57,
+      averageInterest: 33.5
+    },
+    {
+      state: "Ohio",
+      infrastructureRank: 17,
+      cryptocurrency: 50,
+      cryptocurrencies: 51.5,
+      atms: 13,
+      establishments: 45,
+      averageInterest: 23.5
+    },
+    {
+      state: "Montana",
+      infrastructureRank: 18,
+      cryptocurrency: 48,
+      cryptocurrencies: 53,
+      atms: 0,
+      establishments: 15,
+      averageInterest: 24.4
+    },
+    {
+      state: "Missouri",
+      infrastructureRank: 9,
+      cryptocurrency: 50,
+      cryptocurrencies: 49.5,
+      atms: 5,
+      establishments: 63,
+      averageInterest: 20.5
+    },
+    {
+      state: "Indiana",
+      infrastructureRank: 49,
+      cryptocurrency: 42,
+      cryptocurrencies: 56.5,
+      atms: 0,
+      establishments: 20,
+      averageInterest: 41
+    },
+    {
+      state: "Kansas",
+      infrastructureRank: 6,
+      cryptocurrency: 51,
+      cryptocurrencies: 46.5,
+      atms: 1,
+      establishments: 110,
+      averageInterest: 20
+    },
+    {
+      state: "Louisiana",
+      infrastructureRank: 32,
+      cryptocurrency: 49,
+      cryptocurrencies: 47,
+      atms: 2,
+      establishments: 17,
+      averageInterest: 33.5
+    },
+    {
+      state: "Tennessee",
+      infrastructureRank: 42,
+      cryptocurrency: 47,
+      cryptocurrencies: 45.25,
+      atms: 0,
+      establishments: 33,
+      averageInterest: 39
+    },
+    {
+      state: "Wisconsin",
+      infrastructureRank: 46,
+      cryptocurrency: 44,
+      cryptocurrencies: 47.5,
+      atms: 0,
+      establishments: 24,
+      averageInterest: 41.5
+    },
+    {
+      state: "New Mexico",
+      infrastructureRank: 31,
+      cryptocurrency: 44,
+      cryptocurrencies: 43.75,
+      atms: 0,
+      establishments: 18,
+      averageInterest: 34.5
+    },
+    {
+      state: "Vermont",
+      infrastructureRank: 29,
+      cryptocurrency: 40,
+      cryptocurrencies: 47.5,
+      atms: 0,
+      establishments: 6,
+      averageInterest: 34
+    },
+    {
+      state: "Kentucky",
+      infrastructureRank: 37,
+      cryptocurrency: 45,
+      cryptocurrencies: 41.75,
+      atms: 1,
+      establishments: 17,
+      averageInterest: 38.5
+    },
+    {
+      state: "Iowa",
+      infrastructureRank: 39,
+      cryptocurrency: 41,
+      cryptocurrencies: 44.75,
+      atms: 0,
+      establishments: 16,
+      averageInterest: 40
+    },
+    {
+      state: "Nebraska",
+      infrastructureRank: 27,
+      cryptocurrency: 41,
+      cryptocurrencies: 44.5,
+      atms: 0,
+      establishments: 20,
+      averageInterest: 34.5
+    },
+    {
+      state: "Maine",
+      infrastructureRank: 14,
+      cryptocurrency: 38,
+      cryptocurrencies: 46.75,
+      atms: 1,
+      establishments: 11,
+      averageInterest: 28.5
+    },
+    {
+      state: "Oklahoma",
+      infrastructureRank: 41,
+      cryptocurrency: 41,
+      cryptocurrencies: 43,
+      atms: 0,
+      establishments: 20,
+      averageInterest: 42.5
+    },
+    {
+      state: "South Carolina",
+      infrastructureRank: 45,
+      cryptocurrency: 42,
+      cryptocurrencies: 40.5,
+      atms: 0,
+      establishments: 21,
+      averageInterest: 45
+    },
+    {
+      state: "Alabama",
+      infrastructureRank: 35,
+      cryptocurrency: 40,
+      cryptocurrencies: 38.25,
+      atms: 2,
+      establishments: 15,
+      averageInterest: 40.5
+    },
+    {
+      state: "Arkansas",
+      infrastructureRank: 47,
+      cryptocurrency: 40,
+      cryptocurrencies: 38,
+      atms: 0,
+      establishments: 11,
+      averageInterest: 47
+    },
+    {
+      state: "South Dakota",
+      infrastructureRank: 51,
+      cryptocurrency: 39,
+      cryptocurrencies: 37.5,
+      atms: 0,
+      establishments: 0,
+      averageInterest: 49.5
+    },
+    {
+      state: "Wyoming",
+      infrastructureRank: 40,
+      cryptocurrency: 36,
+      cryptocurrencies: 38.5,
+      atms: 0,
+      establishments: 3,
+      averageInterest: 44.5
+    },
+    {
+      state: "Mississippi",
+      infrastructureRank: 50,
+      cryptocurrency: 37,
+      cryptocurrencies: 31.5,
+      atms: 0,
+      establishments: 8,
+      averageInterest: 50
+    },
+    {
+      state: "West Virginia",
+      infrastructureRank: 44,
+      cryptocurrency: 33,
+      cryptocurrencies: 30.75,
+      atms: 0,
+      establishments: 8,
+      averageInterest: 47.5
+    }
+  ]

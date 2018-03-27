@@ -1,0 +1,49 @@
+.top-rate
+  display: flex
+  flex-direction: row
+
+  +respond-to($xsmall)
+    flex-direction: column
+    align-items: center
+
+.top-rate__illustration
+  margin-right: 103px
+
+  +respond-to($medium)
+    margin-right: 70px
+
+  +respond-to($small)
+    margin-right: 64px
+
+  +respond-to($xsmall)
+    margin-right: 0
+    margin-bottom: 4px
+    order: 2
+
+.top-rate__illustration-img
+  width: 702px
+  height: 465px
+
+  +respond-to($medium)
+    width: 600px
+    height: 436px
+
+  +respond-to($small)
+    width: 432px
+    height: 323px
+
+  +respond-to($xsmall)
+    width: 100%
+    height: auto
+
+.top-rate__item
+  font-size: 22px
+  line-height: 44px
+  font-weight: 600
+
+  +respond-to($small)
+    font-size: 16px
+    line-height: 32px
+
+  +respond-to($xsmall)
+    text-align: center

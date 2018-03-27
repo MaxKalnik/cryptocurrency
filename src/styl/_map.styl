@@ -1,0 +1,311 @@
+.map__user-block
+  position: relative
+  display: flex
+  flex-direction: row-reverse
+  justify-content: flex-start
+  top: -58px
+  padding-right: 45px
+
+  +respond-from($large)
+    padding-right: 60px
+
+  +respond-to($small)
+    margin-top: 0
+    padding-right: 25px
+
+  +respond-to($xsmall)
+    top: 0
+    padding-right: 0
+    margin: 24px 0
+    justify-content: center
+
+.map__btn-icon
+  position: relative
+  top: 3px
+  margin-left: 8px
+  transition: fill .25s ease-in
+  fill: #5656ce
+
+.map__btn-icon
+  &:hover
+    fill: $color-white
+
+.map__btn-wrapper
+  position: relative
+  margin-left: 32px
+  &:first-child
+    margin-left: 0
+
+  +respond-to($xsmall)
+    margin-left: 24px
+
+.map__btn-wrapper--share
+  order: 2
+
+.map__btn
+  position: relative
+  width: 128px
+  height: 58px
+  padding: 16px
+  text-align: center
+  border: 1px solid $color-purple
+  border-radius: 5px
+  box-sizing: border-box
+  cursor: pointer
+  background-color: $color-white
+  transition: .25s ease-in
+
+  &:hover
+    background-color: #5656ce
+    border: 1px solid #5656ce
+
+    .map__btn-text
+      color: $color-white
+      border-bottom: 1px solid rgba(195,195,255,0)
+
+    .map__btn-icon
+      fill: $color-white
+
+  &:active
+    background: #5656ce
+    border: 1px solid #5656ce
+    transform: scale(1.05)
+
+    .map__btn-text
+      color: $color-white
+      border-bottom: 1px solid transparent
+
+    .map__btn-icon
+      fill: $color-white
+
+  +respond-from($xsmall)
+    &:hover
+      transform: scale(1.05)
+
+  +respond-to($xsmall)
+    width: 122px
+    height: 48px
+    padding: 11px
+
+.map__btn--active
+  background: #5656ce
+  border: 1px solid #5656ce
+  transform: scale(1.05)
+
+  .map__btn-text
+    color: $color-white
+    border-bottom: 1px solid transparent
+
+  .map__btn-icon
+    fill: $color-white
+
+.map__btn-container--share
+  position: absolute
+  visibility: hidden
+  top: 75px
+  left: -20px
+
+  +respond-to($xsmall)
+    top: 65px
+
+.map__btn-socials
+  position: relative
+  display: flex
+  padding: 24px
+  border: 1px solid $color-purple
+  border-radius: 3px
+  background: $color-white
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.10)
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: -8px
+    left: 50%
+    transform: translateX(-50%)
+    width: 18px
+    height: 8px
+    background: url(images/svg/triangle.svg)
+    background-size: cover
+    border-bottom: 1px solid $color-white
+
+.map__btn-socials-item
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  box-sizing: border-box
+  margin-right: 12px
+
+  &:last-child
+    margin-right: 0
+
+.map__btn-socials-item--fb
+  border: 1px solid #cdd5e4
+
+  &:hover
+    background: #eaeef4
+
+.map__btn-socials-item--tw
+  border: 1px solid #cfeaf9
+
+  &:hover
+    background: #e5f3fd
+
+.map__btn-socials-item--go
+  border: 1px solid #fee4e2
+
+  &:hover
+    background: #feecec
+
+.map__btn-container--embed
+  position: absolute
+  visibility: hidden
+  top: 75px
+  right: 0
+
+  +respond-to($xsmall)
+    top: 65px
+
+.map__btn-embed
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 400px
+  padding: 24px
+  background: $color-white
+  border-radius: 3px
+  border: 1px solid $color-purple
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.10)
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: -8px
+    right: 47px
+    transform: translateX(-50%)
+    width: 18px
+    height: 8px
+    background: url(images/svg/triangle.svg)
+    background-size: cover
+    border-bottom: 1px solid $color-white
+
+  +respond-to($xsmall)
+    width: 226px
+
+.map__btn-embed-text
+  height: 64px
+  overflow-y: scroll
+  margin-bottom: 16px
+  font-size: 12px
+  line-height: 16px
+  border: 1px solid $color-purple
+  border-radius: 3px
+  resize: none
+
+.map__btn-embed-copy
+  width: 156px
+  display: inline-block
+  color: $color-white
+  text-transform: uppercase
+  font-size: 12px
+  line-height: 16px
+  font-weight: 600
+  padding: 8px 14px 8px 14px
+  outline: none
+  border: none
+  background-color: #5656ce
+  border-radius: 3px
+  cursor: pointer
+  margin: 0 auto
+  &:hover
+    background-color: desaturate(#5656ce, 20%)
+  &:active
+    background-color: desaturate(#5656ce, 20%)
+
+  +respond-to($xsmall)
+    font-size: 10px
+
+.map__btn-embed-copy.map__btn-embed-copy--light-blue
+  background: #4080d7
+
+.map__btn-text
+  font-size: 12px
+  line-height: 26px
+  color: #2020a3
+  font-weight: 600
+  border-bottom: 1px solid rgba(86,86,206,.3)
+  text-transform: uppercase
+  transition: .25s ease-in
+  &:hover
+    color: $color-white
+
+  +respond-to($xsmall)
+    font-size: 10px
+
+.map-wrapper
+  overlow-x: scroll
+
+.map__btn-container.visible
+  visibility: visible
+
+.frame-container
+  display: block
+
+.map--green
+  .map__btn-text
+    color: #29b16a
+    border-bottom: 1px solid rgba(112,229,168,.3)
+
+  .map__btn
+    border: 1px solid $color-green
+
+    &:hover
+      background-color: #70e5a8
+      border: 1px solid transparent
+
+      .map__btn-text
+        color: $color-white
+        border-bottom: 1px solid #70e5a8
+
+      .map__btn-icon
+        fill: $color-white
+
+    &:active
+      background-color: #70e5a8
+      border: 1px solid #70e5a8
+
+      .map__btn-text
+        color: $color-white
+        border-bottom: 1px solid transparent
+
+      .map__btn-icon
+        fill: $color-white
+
+  .map__btn-icon
+    fill: #70e5a8
+
+  .map__btn-icon
+    &:hover
+      fill: $color-white
+
+  .map__btn-embed,
+  .map__btn-socials
+    border: 1px solid $color-green
+    &:before
+      background: url(images/svg/triangle-green.svg)
+
+  .map__btn-embed-text
+    border: 1px solid $color-green
+
+  .map__btn-embed-copy
+    background-color: #70e5a8
+    border-radius: 3px
+    cursor: pointer
+    margin: 0 auto
+    &:hover
+      background-color: desaturate(#70e5a8, 20%)
+    &:active
+      background-color: desaturate(#70e5a8, 20%)
