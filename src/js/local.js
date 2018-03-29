@@ -111,4 +111,30 @@ $(document).ready(function () {
     body.on('click', '#copyButton', function() {
         copyToClipboard($('#copyTarget'));
     });
+
+    var mainIlustrImages = $('.group-opacity');
+    var upperContent = $('.upper__content');
+
+    var upperScrollHandler = function () {
+        if (upperContent && $(window).scrollTop() > upperContent.offset().top - upperContent.height() / 2) {
+            mainIlustrImages.css('opacity', '1');
+            $(document).off('scroll', upperScrollHandler);
+        }
+    };
+    if (upperContent.length > 0) {
+        $(document).on('scroll', upperScrollHandler);
+    }
+
+    var topRate = $('.top-rate');
+    var topRateOpacity = $('.top-rate__opacity');
+
+    var topRateScrollHandler = function () {
+        if (topRate && $(window).scrollTop() > topRate.offset().top - topRate.height() / 2) {
+            topRateOpacity.css('opacity', '1');
+            $(document).off('scroll', topRateScrollHandler);
+        }
+    };
+    if (topRate.length > 0) {
+        $(document).on('scroll', topRateScrollHandler);
+    }
 });

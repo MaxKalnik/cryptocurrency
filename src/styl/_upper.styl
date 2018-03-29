@@ -24,15 +24,33 @@
     margin-right: 0
 
 .upper__pic-img
+  width: 536px
+  height: 514px
   +respond-to($medium)
     width: 435px
+    height: auto
 
   +respond-to($small)
     width: 340px
+    height: auto
 
   +respond-to($xsmall)
     width: 276px
     height: 265px
+
+  #group-14,
+  #group-13,
+  #group-12
+    opacity: 0
+
+  #group-14
+    transition: .65s .5s  ease-in
+
+  #group-13
+    transition: .65s 1s ease-in
+
+  #group-12
+    transition: .65s 1.5s ease-in
 
 .upper__text-under-title
   @extend .under-title
